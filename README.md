@@ -2,9 +2,9 @@
 ## Sistem Pemantauan Kelembapan Tanah Berbasis IoT (Simulasi CLI)
 ---
 ## 1. Identitas Mahasiswa & Tema NIM
-**Nama Lengkap** : Eko Rahmat Tulus
-**NIM** : H1D025064 
-**Tema Responsi** : **Internet of Things (IoT) - Smart Farming System** 
+**Nama Lengkap** : Eko Rahmat Tulus <br>
+**NIM** : H1D025064 <br>
+**Tema Responsi** : **Internet of Things (IoT) - Smart Farming System** <br> 
 **Keterangan Tema** : Sistem simulasi pemantauan kelembapan tanah pada lahan pertanian dan pengendalian aktuator pompa air berdasarkan pembagian nomor digit NIM. 
 ---
 ## 2. Petunjuk Compile dan Run Melalui Terminal
@@ -54,14 +54,14 @@ Berikut adalah dokumentasi tangkapan layar (*screenshot*) dan representasi luara
 ---
 
 ### A. Menu 1 — Lihat Informasi Lahan
-Menampilkan daftar seluruh lahan tanam awal beserta tanaman, sensor kelembapan, dan pompa air yang terpasang pada masing-masing lahan:
+Menampilkan daftar seluruh lahan tanam awal beserta tanaman, sensor kelembapan, dan pompa air yang terpasang pada masing-masing lahan: <br>
 > ![Screenshot Informasi Lahan](Output/informasiLahan.png)
 
 ---
 
 ### B. Menu 2 — Cek Kelembapan Tanah (Skenario Tanah KERING & Kontrol Pompa Air)
 > ![Screenshot Cek Tanah Kering & Pompa](Output/checkKelembapan-perluSiram.png)
-Alur ketika kelembapan tanah di bawah batas kritis (`KERING`):
+<br>Alur ketika kelembapan tanah di bawah batas kritis (`KERING`):
 1. Pengguna memilih lahan (misal: Lahan Cabai).
 2. Pengguna memasukkan nilai kelembapan (misal: `25%` di mana batas kritis cabai adalah `40%`).
 3. Sistem mendeteksi status tanah `KERING` dan menampilkan **PERINGATAN**.
@@ -76,7 +76,7 @@ Alur ketika kelembapan tanah di bawah batas kritis (`KERING`):
 
 ### C. Menu 2 — Cek Kelembapan Tanah (Skenario Tanah IDEAL)
 > ![Screenshot Cek Tanah Ideal](Output/checkKelembapan-Aman.png)
-Alur ketika kelembapan tanah berada di atas atau sama dengan batas kritis:
+<br>Alur ketika kelembapan tanah berada di atas atau sama dengan batas kritis:
 - Sistem melaporkan status `IDEAL`.
 - Sistem tidak menampilkan peringatan dan tidak memicu penawaran penyiraman darurat, lalu langsung kembali ke menu utama.
 
