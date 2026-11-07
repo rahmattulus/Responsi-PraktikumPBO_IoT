@@ -1,29 +1,30 @@
 public abstract class Alat {
-    public static final String Vendor_Alat = "NVDIA";
+    public static final String VENDOR_PERANGKAT = "NVIDIA";
     private final String nomorSeri;
-    private String lokasiPemasangan;
+    private String namaPerangkat;
 
-    public Alat(String nomorSeri){
-        this.nomorSeri=nomorSeri;
-        this.lokasiPemasangan = "Belum dipasang";
+    public Alat(String nomorSeri, String namaPerangkat) {
+        this.nomorSeri = nomorSeri;
+        this.namaPerangkat = namaPerangkat;
     }
 
     public String getNomorSeri() {
         return nomorSeri;
     }
 
-    public String getLokasiPemasangan() {
-        return lokasiPemasangan;
+    public String getNamaPerangkat() {
+        return namaPerangkat;
     }
 
-    public void setLokasiPemasangan(String lokasiPemasangan) {
-        this.lokasiPemasangan = lokasiPemasangan;
+    public void setNamaPerangkat(String namaPerangkat) {
+        this.namaPerangkat = namaPerangkat;
     }
+
     public abstract void prosesData();
-    public void cetakInfo(){
-        System.out.println("Vendor: "+Vendor_Alat);
-        System.out.println("Nomor Seri: "+nomorSeri);
-        System.out.println("Lokasi Pemasangan: "+lokasiPemasangan);
 
+    public void cetakInfo() {
+        System.out.println("Vendor         : " + VENDOR_PERANGKAT);
+        System.out.println("Nomor Seri     : " + nomorSeri);
+        System.out.println("Nama Perangkat : " + namaPerangkat);
     }
 }
